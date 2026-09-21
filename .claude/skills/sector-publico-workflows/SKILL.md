@@ -88,6 +88,17 @@ proponer un **TO-BE** — proponer mejoras sin haber mapeado primero lo
 existente es la forma más común de recomendar una solución que no encaja
 con la realidad operativa o normativa de la dependencia.
 
+**Excepción — diseño desde cero**: si el usuario pide diseñar un proceso
+nuevo que aún no existe (no hay nada operando que diagnosticar), no hay
+AS-IS que levantar. En ese caso omite la fase de diagnóstico/entrevista y
+el diagrama AS-IS, dilo explícitamente al inicio del entregable (una nota
+breve basta), y ve directo a un diagrama de flujo propuesto. Sigue usando
+los patrones de `references/patrones-sector-publico.md` como punto de
+partida y adapta la sección de "hallazgos" de la plantilla a "riesgos de
+diseño anticipados" en vez de observaciones de campo — la lógica de
+priorizar por impacto y de marcar como pendiente lo que no se puede
+confirmar sigue aplicando igual.
+
 ## El entregable
 
 El resultado de usar esta skill debe ser accionable, no solo descriptivo.

@@ -99,6 +99,17 @@ la haya.
 de una dependencia u orden de gobierno (municipal-estatal-federal, o
 entre secretarías) antes de resolverse.
 
+**También aplica, como híbrido, dentro de una misma dependencia**: cuando
+varias áreas internas (no dependencias distintas) se pasan el expediente
+en secuencia sin un sistema compartido ni un dueño único del tiempo total
+— por ejemplo, tres direcciones de un mismo municipio que se turnan un
+expediente en papel. No es un caso interinstitucional en sentido estricto,
+pero tiene el mismo riesgo característico (tiempo "en tránsito" sin dueño
+ni medición) y conviene diagnosticarlo con la misma lista de verificación.
+Dilo explícitamente en el documento cuando trates un caso así como
+híbrido, en vez de forzarlo a encajar en el patrón 1 (jerárquico) o el 2
+(expediente) solamente.
+
 **Elementos típicos que se olvidan mencionar**:
 - Formato en el que se transfiere el expediente entre dependencias
   (¿sistema integrado, oficio físico, correo electrónico?) — esto casi

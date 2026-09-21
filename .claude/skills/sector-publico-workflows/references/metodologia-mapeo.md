@@ -38,6 +38,39 @@ BPM/workflow real).
   diagrama diga explícitamente cuánto tiempo se pierde en cada cruce, si
   se conoce.
 
+## Pasos en paralelo
+
+Cuando dos o más carriles reciben el expediente al mismo tiempo y ninguno
+depende del resultado del otro (por ejemplo, dos revisiones técnicas
+independientes que hoy corren en serie mal por costumbre, no por
+necesidad), represéntalo con un `subgraph` contenedor que agrupa a los
+carriles paralelos, cada uno como su propio `subgraph` anidado, y una
+única flecha de entrada que se bifurca hacia ambos:
+
+```mermaid
+flowchart TD
+    E[Registra expediente] --> H
+    E --> M
+    subgraph Revision["Revisión en paralelo"]
+        direction TB
+        subgraph PC["Área A"]
+            H[Revisión de Área A] --> I{¿Cumple?}
+        end
+        subgraph AreaB["Área B"]
+            M[Revisión de Área B] --> N{¿Cumple?}
+        end
+    end
+    I --> P{¿Ambos dictámenes positivos?}
+    N --> P
+```
+
+Antes de proponer esto en un TO-BE, confírmalo explícitamente con el
+usuario o regístralo como pendiente de validar: dos revisiones que
+*parecen* independientes a veces tienen una dependencia técnica oculta
+(un área necesita un dato que solo la otra genera), y afirmarlo sin
+verificarlo es la forma más fácil de proponer una mejora que no funciona
+en la práctica.
+
 ## Esqueleto de ejemplo
 
 ```mermaid
