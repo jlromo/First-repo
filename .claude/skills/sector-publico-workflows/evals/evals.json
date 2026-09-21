@@ -1,0 +1,17 @@
+{
+  "skill_name": "sector-publico-workflows",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "Necesito mapear el proceso de expedición de licencias de funcionamiento en mi municipio. Actualmente el ciudadano entrega documentos en ventanilla, pasa a revisión de Protección Civil, luego a Catastro para validar uso de suelo, y finalmente el director firma. Tarda como 45 días aunque la ley dice 20. Quiero un diagnóstico y ver dónde se atora.",
+      "expected_output": "Documento AS-IS con ficha del proceso, diagrama Mermaid en carriles, cuellos de botella señalados (probablemente el cruce entre Protección Civil y Catastro), hallazgos priorizados y al menos una recomendación de nivel de intervención con justificación.",
+      "files": []
+    },
+    {
+      "id": 2,
+      "prompt": "Ayúdame a diseñar el flujo de un proceso de atención de quejas ciudadanas para la contraloría interna de una dependencia federal, desde que se recibe la queja hasta que se resuelve, incluyendo cuándo debe escalar.",
+      "expected_output": "Documento con diagrama de flujo en carriles que cubra recepción multicanal, clasificación/triage, investigación, resolución y criterios de escalamiento; debe reflejar el patrón de atención ciudadana de la skill.",
+      "files": []
+    }
+  ]
+}
