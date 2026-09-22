@@ -12,6 +12,12 @@
       "prompt": "Ayúdame a diseñar el flujo de un proceso de atención de quejas ciudadanas para la contraloría interna de una dependencia federal, desde que se recibe la queja hasta que se resuelve, incluyendo cuándo debe escalar.",
       "expected_output": "Documento con diagrama de flujo en carriles que cubra recepción multicanal, clasificación/triage, investigación, resolución y criterios de escalamiento; debe reflejar el patrón de atención ciudadana de la skill.",
       "files": []
+    },
+    {
+      "id": 3,
+      "prompt": "El usuario comparte un extracto de manual interno de una dependencia estatal de tránsito y pide un diagnóstico rápido: 'Aquí está el procedimiento actual para la Constancia de No Antecedentes de Infracciones. Manual interno, sección 4.2: El ciudadano solicita la constancia en ventanilla única presentando INE y pagando derechos ($150). El cajero registra el pago y turna el comprobante al área de Archivo, quien busca al ciudadano en el sistema de infracciones (Sistema SIT) y, si no tiene infracciones pendientes, imprime y sella la constancia en el momento. Si tiene infracciones pendientes, se le informa y no se expide la constancia hasta que las liquide. Tiempo de entrega: mismo día, sin plazo legal específico definido en el reglamento. Se procesan cerca de 40 solicitudes diarias.' El usuario pregunta: '¿vale la pena que documentemos esto o hay algo que mejorar?'",
+      "expected_output": "Debe extraer del texto los datos disponibles (actores, pasos, sistema usado, volumen, ausencia de SLA legal) sin repreguntar lo ya dado. Dado que es un proceso corto, lineal, de 2-3 actores sin bifurcaciones complejas, debe usar su criterio de 'references/metodologia-mapeo.md' (sección Cuándo NO usar un diagrama) para decidir si un diagrama Mermaid es necesario o si una lista de pasos simple basta, y justificar la elección en vez de generar automáticamente un diagrama complejo. La recomendación final debe ubicarse mayormente en Nivel 1 (el proceso ya es rápido y sin cuellos de botella evidentes) y no forzar una propuesta de automatización sin justificación de volumen/impacto.",
+      "files": []
     }
   ]
 }
