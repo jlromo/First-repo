@@ -7,6 +7,14 @@ secciones completas solo para acortar el documento — cada una responde a
 una pregunta que el lector (un director, un equipo técnico, un órgano de
 control) probablemente va a hacer.
 
+Si el proceso es corto y lineal y decidiste usar una lista de pasos en
+vez de un diagrama Mermaid (ver "Cuándo NO usar un diagrama" en
+`references/metodologia-mapeo.md`), renombra los encabezados "Diagrama
+AS-IS" / "Diagrama TO-BE" a "Descripción del proceso (AS-IS)" /
+"Descripción del proceso (TO-BE)" y sustituye el bloque ```mermaid``` por
+la lista numerada — el resto de la estructura (ficha, hallazgos,
+recomendaciones, riesgos, pendientes) se mantiene igual.
+
 ---
 
 # [Nombre del proceso]
